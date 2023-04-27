@@ -1,0 +1,9 @@
+{
+    "block.autocrafter.autocrafter_block": "Autocrafter",
+    "container.autocrafter.supplies": "Supplies",
+    "container.autocrafter.crafting": "Crafting",
+    "container.autocrafter.byproducts": "Byproducts",
+    "container.autocrafter:autocrafter.flag.ready": "Auto-crafting ready",
+    "container.autocrafter:autocrafter.flag.missing": "Missing ingredients",
+    "container.autocrafter:autocrafter.flag.invalid": "Auto-crafting not supported"
+}

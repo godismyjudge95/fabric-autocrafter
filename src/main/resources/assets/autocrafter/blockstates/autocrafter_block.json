@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "facing=down": {
+            "model": "autocrafter:block/autocrafter_block_down"
+        },
+        "facing=up": {
+            "model": "autocrafter:block/autocrafter_block_up"
+        },
+        "facing=north": {
+            "model": "autocrafter:block/autocrafter_block"
+        },
+        "facing=south": {
+            "model": "autocrafter:block/autocrafter_block",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "autocrafter:block/autocrafter_block",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "autocrafter:block/autocrafter_block",
+            "y": 90
+        }
+    }
+}

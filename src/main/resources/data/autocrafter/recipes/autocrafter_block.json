@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "redstone",
+    "key": {
+        "l": {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "p": {
+            "tag": "minecraft:planks"
+        },
+        "c": {
+            "item": "minecraft:crafting_table"
+        },
+        "d": {
+            "item": "minecraft:dropper"
+        }
+    },
+    "pattern": [
+        "lll",
+        "pcp",
+        "pdp"
+    ],
+    "result": {
+        "item": "autocrafter:autocrafter_block"
+    }
+}
