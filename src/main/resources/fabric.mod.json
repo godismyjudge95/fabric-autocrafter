@@ -15,9 +15,6 @@
     "icon": "assets/autocrafter/icon.png",
     "environment": "*",
     "entrypoints": {
-        "fabric-datagen": [
-            "net.godismyjudge95.autocrafter.DataGeneration"
-        ],
         "main": [
             "net.godismyjudge95.autocrafter.AutocrafterMod"
         ],

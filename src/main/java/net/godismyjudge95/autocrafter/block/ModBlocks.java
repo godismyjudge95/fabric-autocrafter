@@ -26,23 +26,23 @@ public class ModBlocks {
             Items.REDSTONE);
 
     @SuppressWarnings("SameParameterValue")
-    private static Block registerBlock(String name, Block block, ItemGroup tab, Item after) {
-        registerBlockItem(name, block, tab, after);
+    private static Block registerBlock(String name, Block block, ItemGroup group, Item after) {
+        registerBlockItem(name, block, group, after);
 
         return Registry.register(
                 Registries.BLOCK,
-                new Identifier(AutocrafterMod.MOD_ID, name),
+                AutocrafterMod.BLOCK_ID,
                 block);
     }
 
-    private static void registerBlockItem(String name, Block block, ItemGroup tab, Item after) {
+    private static void registerBlockItem(String name, Block block, ItemGroup group, Item after) {
         Item item = Registry.register(
                 Registries.ITEM,
-                new Identifier(AutocrafterMod.MOD_ID, name),
+                AutocrafterMod.BLOCK_ID,
                 new BlockItem(block, new FabricItemSettings()));
 
         //noinspection UnstableApiUsage
-        ItemGroupEvents.modifyEntriesEvent(tab).register(content -> content.addAfter(after, item));
+        ItemGroupEvents.modifyEntriesEvent(group).register(content -> content.addAfter(after, item));
     }
 
     public static void registerModBlocks() {

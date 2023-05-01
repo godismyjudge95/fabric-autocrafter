@@ -4,6 +4,7 @@ import net.godismyjudge95.autocrafter.AutocrafterData;
 import net.godismyjudge95.autocrafter.inventory.AutocrafterInventory;
 import net.minecraft.block.*;
 import net.minecraft.recipe.*;
+import net.minecraft.screen.NamedScreenHandlerFactory;
 import org.jetbrains.annotations.Nullable;
 
 import net.godismyjudge95.autocrafter.block.entity.AutocrafterBlockEntity;
@@ -119,9 +120,9 @@ public class AutocrafterBlock extends BlockWithEntity {
             return ActionResult.SUCCESS;
         }
 
-        BlockEntity blockEntity = world.getBlockEntity(pos);
-        if (blockEntity instanceof AutocrafterBlockEntity) {
-            player.openHandledScreen((AutocrafterBlockEntity) blockEntity);
+        NamedScreenHandlerFactory screenHandlerFactory = state.createScreenHandlerFactory(world, pos);
+        if (screenHandlerFactory != null) {
+            player.openHandledScreen(screenHandlerFactory);
             player.incrementStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
         }
 

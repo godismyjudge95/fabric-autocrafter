@@ -89,8 +89,8 @@ public class AutocrafterBlockEntity extends BlockEntity
      */
     @Nullable
     @Override
-    public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
-        return new AutocrafterScreenHandler(syncId, inv, this.inventory, propertyDelegate, ScreenHandlerContext.create(world, pos));
+    public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
+        return new AutocrafterScreenHandler(syncId, playerInventory, inventory, propertyDelegate, ScreenHandlerContext.create(world, pos));
     }
     /*
      * ----------------------------- END {@link ScreenHandlerFactory} ----------------------------

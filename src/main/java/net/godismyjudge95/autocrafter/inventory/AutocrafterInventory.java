@@ -9,7 +9,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.util.collection.DefaultedList;
 
 public class AutocrafterInventory extends CraftingInventory {
-    private final DefaultedList<ItemStack> stacks;
+    public final DefaultedList<ItemStack> stacks;
     private final int width;
     private final int height;
     private ScreenHandler handler = null;
